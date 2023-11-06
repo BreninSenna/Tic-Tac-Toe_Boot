@@ -7,20 +7,29 @@
     text-rendering: optimizeLegibility;
 }
 
-/* Definições da navbar */
-.bg-minha-cor {
-    background: rgb(254, 161, 0);
+/* Definição do barra de navegação */
+.bg-cor-que-eu-quero {
+    background: rgb(255, 149, 1);
 }
 
 #navbar-items .navbar-nav {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    width: 100%;   
 }
 
 .tabuleiro {
-    margin-top: 7rem;
-    display: grid;
-    grid-template-columns: 10rem 10rem 10rem;
-    grid-template-rows: 10rem 10rem 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 24rem;
+    height: 24rem;
+    margin-top: 6rem;
+}
+
+.celula {
+    width: 7rem;
+    height: 7rem;
+    gap: .5rem;
+    box-shadow: .25rem .25rem rgb(0, 0, 0)
 }
